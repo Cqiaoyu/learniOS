@@ -14,6 +14,8 @@
 		C3AA7FA11ACC224000FC6232 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AA7FA01ACC224000FC6232 /* Images.xcassets */; };
 		C3AA7FA41ACC224000FC6232 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3AA7FA21ACC224000FC6232 /* LaunchScreen.xib */; };
 		C3AA7FB01ACC224100FC6232 /* CheckNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AA7FAF1ACC224100FC6232 /* CheckNetworkingTests.m */; };
+		C3AA7FBB1ACC2C1A00FC6232 /* CKHReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AA7FBA1ACC2C1A00FC6232 /* CKHReachability.m */; };
+		C3AA7FBD1ACC2C3900FC6232 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AA7FBC1ACC2C3900FC6232 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		C3AA7FA91ACC224100FC6232 /* CheckNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AA7FAE1ACC224100FC6232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3AA7FAF1ACC224100FC6232 /* CheckNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckNetworkingTests.m; sourceTree = "<group>"; };
+		C3AA7FB91ACC2C1A00FC6232 /* CKHReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKHReachability.h; sourceTree = "<group>"; };
+		C3AA7FBA1ACC2C1A00FC6232 /* CKHReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKHReachability.m; sourceTree = "<group>"; };
+		C3AA7FBC1ACC2C3900FC6232 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AA7FBD1ACC2C3900FC6232 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		C3AA7F871ACC224000FC6232 = {
 			isa = PBXGroup;
 			children = (
+				C3AA7FBC1ACC2C3900FC6232 /* SystemConfiguration.framework */,
 				C3AA7F921ACC224000FC6232 /* CheckNetworking */,
 				C3AA7FAC1ACC224100FC6232 /* CheckNetworkingTests */,
 				C3AA7F911ACC224000FC6232 /* Products */,
@@ -85,6 +92,8 @@
 				C3AA7F981ACC224000FC6232 /* AppDelegate.m */,
 				C3AA7F9A1ACC224000FC6232 /* ViewController.h */,
 				C3AA7F9B1ACC224000FC6232 /* ViewController.m */,
+				C3AA7FB91ACC2C1A00FC6232 /* CKHReachability.h */,
+				C3AA7FBA1ACC2C1A00FC6232 /* CKHReachability.m */,
 				C3AA7F9D1ACC224000FC6232 /* Main.storyboard */,
 				C3AA7FA01ACC224000FC6232 /* Images.xcassets */,
 				C3AA7FA21ACC224000FC6232 /* LaunchScreen.xib */,
@@ -222,6 +231,7 @@
 				C3AA7F9C1ACC224000FC6232 /* ViewController.m in Sources */,
 				C3AA7F991ACC224000FC6232 /* AppDelegate.m in Sources */,
 				C3AA7F961ACC224000FC6232 /* main.m in Sources */,
+				C3AA7FBB1ACC2C1A00FC6232 /* CKHReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
