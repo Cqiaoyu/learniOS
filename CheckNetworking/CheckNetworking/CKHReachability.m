@@ -46,7 +46,7 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     [self pingReachabilityInternal];
     BOOL isReachable = (connectionFlags&kSCNetworkFlagsReachable) != 0;
-    BOOL needsConnection = ((connectionFlags & kSCNetworkFlagsConnectionRequired) != 0);
+    BOOL needsConnection = ((connectionFlags&kSCNetworkFlagsConnectionRequired) != 0);
     [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:NO];
     return (isReachable && !needsConnection) ? YES : NO;
 }
