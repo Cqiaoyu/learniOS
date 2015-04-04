@@ -49,6 +49,7 @@
     BOOL needsConnection = ((connectionFlags&kSCNetworkFlagsConnectionRequired) != 0);
     [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:NO];
     return (isReachable && !needsConnection) ? YES : NO;
+    
 }
 
 
