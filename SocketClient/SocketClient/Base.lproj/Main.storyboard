@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7528.3" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7518.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7r-4R-B4N">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VmQ-VX-AE8"/>
+                                    <constraint firstAttribute="width" constant="46" id="hup-aq-9Ti"/>
+                                </constraints>
+                                <state key="normal" title="发送">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UqY-WP-aKg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDd-UW-Isn">
+                                <rect key="frame" x="277" y="348" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bUT-ob-IIe"/>
+                                    <constraint firstAttribute="width" constant="46" id="iNv-Pa-bMF"/>
+                                </constraints>
+                                <state key="normal" title="接收">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fK2-FO-meC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCQ-zn-JrN">
+                                <rect key="frame" x="20" y="428" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mCQ-zn-JrN" firstAttribute="top" secondItem="NDd-UW-Isn" secondAttribute="bottom" constant="50" id="2ks-tV-vEY"/>
+                            <constraint firstAttribute="trailing" secondItem="mCQ-zn-JrN" secondAttribute="trailing" constant="20" id="5Lh-LH-U2b"/>
+                            <constraint firstItem="b7r-4R-B4N" firstAttribute="leading" secondItem="NDd-UW-Isn" secondAttribute="leading" id="Cqb-9P-XhH"/>
+                            <constraint firstAttribute="centerY" secondItem="b7r-4R-B4N" secondAttribute="centerY" id="JuX-Xc-eDy"/>
+                            <constraint firstAttribute="centerX" secondItem="b7r-4R-B4N" secondAttribute="centerX" id="Keg-cR-T2y"/>
+                            <constraint firstItem="NDd-UW-Isn" firstAttribute="top" secondItem="b7r-4R-B4N" secondAttribute="bottom" constant="33" id="LCb-cU-e1t"/>
+                            <constraint firstItem="mCQ-zn-JrN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ZgM-M4-ozy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showLabel" destination="mCQ-zn-JrN" id="ODe-Yk-jMG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
